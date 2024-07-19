@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+th {
+    font-weight: normal;
+    white-space: nowrap;
+    /* 防止换行 */
+    font-weight: bold;
+    /* 去掉灰色背景 */
+    background: none;
+    /* 去掉背景颜色 */
+}
+
+
+.status-completed {
+    color: green;
+}
+
+.status-pending {
+    color: orange;
+}
+
+.status-stopped {
+    color: red;
+}
+
+.status-interview {
+    color: blue;
+}
+
+/* 设置行业列的宽度 */
+td:nth-child(4) {
+    width: 80px;
+    /* 根据需要调整宽度 */
+}
+
+/* 设置 Base 列的固定宽度 */
+td:nth-child(5) {
+    width: 60px;
+    /* 根据需要调整宽度 */
+}
+
+select,
+input[type="date"],
+input[type="text"],
+input[type="url"] {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+select.base-select {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    border-radius: 12px;
+    /* 增加边角半径 */
+    -webkit-appearance: none;
+    /* for Chrome */
+    -moz-appearance: none;
+    /* for Firefox */
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    text-align-last: center;
+}
+
+select.base-select.北京 {
+    background-color: #E8B6FA;
+    /* 浅紫色 */
+    color: #333;
+}
+
+select.base-select.上海 {
+    background-color: #6FA2FB;
+    /* 浅蓝色 */
+    color: #333;
+}
+
+select.base-select.深圳 {
+    background-color: #AAE8CE;
+    /* 浅绿色 */
+    color: #333;
+}
+
+select.priority-select,
+select.industry-select {
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    border-radius: 12px;
+    /* 增加边角半径 */
+    -webkit-appearance: none;
+    /* for Chrome */
+    -moz-appearance: none;
+    /* for Firefox */
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    text-align-last: center;
+}
+
+
+.priority-select.A {
+    background-color: rgb(223, 13, 13);
+    color: white;
+}
+
+.priority-select.B {
+    background-color: #FFF5BA;
+    /* 浅黄色 */
+    color: #333;
+}
+
+.priority-select.C {
+    background-color: #D1F2EB;
+    /* 浅青色 */
+    color: #333;
+}
+
+/* 隐藏公司输入框的边框和背景 */
+td input[type="text"],
+td input[type="date"],
+td input[type="url"] {
+    border: none;
+    background: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    /* 居中对齐 */
+    padding: 0;
+}
+
+/* 行业列的背景颜色 */
+select.industry-select.互联网 {
+    background-color: #D1E7FF;
+    /* 浅蓝色 */
+    color: #333;
+}
+
+select.industry-select.企业 {
+    background-color: #EBD1FF;
+    /* 浅紫色 */
+    color: #333;
+}
+
+select.industry-select.国企 {
+    background-color: #FFD1E1;
+    /* 浅粉色 */
+    color: #333;
+}
+
+/* 多选框的样式 */
+.status-select {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.status-select.已投递 {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.status-select.已测评 {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.status-select.已一面 {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.status-select.已二面 {
+    background-color: #428bca;
+    color: white;
+}
+
+.status-select.终止 {
+    background-color: #d9534f;
+    color: white;
+}
+
+.status-select.new-status {
+    background-color: #eee;
+    color: #333;
+    border: 1px dashed #ccc;
+}
+
+.status-dropdown {
+    display: inline;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+
+#add-row-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#add-row-button:hover {
+    background-color: #45a049;
+}
